@@ -1,0 +1,74 @@
+.contact-container {
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 10% 80% 10%;
+    border: 1px solid var(--grey-color-light);
+}
+
+.contact-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-brand img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact-brand h1 {
+    color: var(--grey-color);
+    text-transform: uppercase;
+}
+
+.contact-ortheruser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 0.8rem;
+}
+
+.contact-ortheruser-select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    min-height: 5rem;
+    width: 90%;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    gap: 1rem;
+    transition: 0.5s ease-in-out;
+    background-color: var(--grey-color-light);
+}
+
+.contact-ortheruser-select.selected {
+    background-color: var(--blue-color);
+}
+
+.contact-ortheruser-avatar img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.contact-ortheruser-username h3 {
+    color: var(--white-color);
+}
+
+.contact-currentuser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-currentuser-avatar img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.contact-currentuser-username h3 {
+    color: var(--grey-color);   
+}

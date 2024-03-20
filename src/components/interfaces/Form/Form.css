@@ -1,0 +1,386 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--blue-color);
+}
+
+.form-input {
+    outline: none;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    padding: 0.35rem;
+    color: var(--grey-color);
+    background: var(--white-color);
+    border: 1px solid var(--grey-color-light);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-input:focus {
+    border-color: #0176d3;
+    box-shadow: #0176d3 0px 0px 3px 0px;
+}
+
+.form-range {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 7rem;
+}
+
+.form-range-slider {
+    position: relative;
+    width: 100%;
+}
+
+.form-range-slider span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 2rem;
+    top: -4rem;
+    z-index: 1;
+    color: #fff;
+    transform: translateX(-40%) scale(0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-range-slider span:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #664AFF;
+    border: 3px solid #fff;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.form-range-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.form-range-field .form-range-value {
+    position: absolute;
+    font-size: 1.6rem;
+    color: var(--grey-color);
+}
+
+.form-range-field .value-left {
+    left: -45px;
+}
+
+.form-range-field .value-right {
+    right: -55px;
+}
+
+.form-range input {
+    width: 100%;
+    height: 1rem;
+}
+
+.form-radio label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+    color: var(--grey-color);
+}
+
+.form-radio input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.form-radio span {
+    font-size: 1.6rem;
+    padding: 0 0.5rem;
+    color: var(--grey-color);
+}
+
+.form-checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.5rem;
+    margin-bottom: 0.35rem;
+    color: var(--grey-color);
+}
+
+.form-checkbox input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.form-checkbox span {
+    font-size: 1.6rem;
+    padding: 0 0.5rem;
+    color: var(--grey-color);
+}
+
+.form-autocomplete-wrapper {
+    position: relative;
+}
+
+.form-autocomplete {
+    outline: none;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    padding: 0.35rem;
+    color: var(--grey-color);
+    background: var(--white-color);
+    border: 1px solid var(--grey-color-light);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-autocomplete:focus {
+    border-color: #0176d3;
+    box-shadow: #0176d3 0px 0px 3px 0px;
+}
+
+.form-autocomplete-list {
+    position: absolute;
+    width: 100%;
+    max-height: 250px;
+    border-radius: 0.5rem;
+    z-index: 2;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.form-autocomplete-list button {
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 100%;
+    max-height: 5.5rem;
+    color: var(--grey-color);
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--grey-color-light);
+}
+
+.form-autocomplete-list button:hover {
+    color: var(--white-color);
+    background: var(--grey-color-light);
+}
+
+.form-autocomplete-list button:last-child {
+    border-bottom: none;
+}
+
+.form-dropdown-wrapper {
+    position: relative;
+}
+
+.form-dropdown {
+    cursor: pointer;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    padding: 0.35rem;
+    color: var(--grey-color);
+    background: var(--white-color);
+    border: 1px solid var(--grey-color-light);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-dropdown:after {
+    content:'';
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 50%;
+    right: 1rem;
+    margin-top: -3px;
+    border: 0.5rem solid transparent;
+    border-top-color: #000;
+}
+
+.form-dropdown.active:after {
+    border-bottom-color: #000;
+    border-top-color: #fff;
+    margin-top: -9px;
+}
+
+.form-dropdown.active {
+    border-color: #0176d3;
+    box-shadow: #0176d3 0px 0px 3px 0px;
+}
+
+.form-dropdown-list {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.form-dropdown-list .form-checkbox-dropdown:hover {
+    background-color: var(--grey-color-light)
+}
+
+.form-dropdown-list .form-checkbox-dropdown label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-top: 1px solid var(--grey-color-light);
+}
+
+.form-dropdown-list .form-checkbox-dropdown input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.form-dropdown-list .form-checkbox-dropdown span {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    color: var(--grey-color);
+}
+
+.form-dropdown-list .form-checkbox-dropdown span:hover {
+    color: var(--white-color);
+}
+
+.form-select {
+    outline: none;
+    margin: 0;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    padding: 0.35rem;
+    color: var(--grey-color);
+    background: var(--white-color);
+    border: 1px solid var(--grey-color-light);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-select:focus {
+    border-color: #0176d3;
+    box-shadow: #0176d3 0px 0px 3px 0px;
+}
+
+.form-validate {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #ee243c;
+    margin: 0.25rem 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .form-label {
+        font-size: 1.4rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .form-input {
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+
+    .form-range {
+        padding: 1rem 6rem;
+    }
+
+    .form-range-slider span {
+        height: 3rem;
+        width: 3rem;
+        font-size: 1.6rem;
+        top: -2.5rem
+    }
+
+    .form-range-field .form-range-value {
+        font-size: 1.2rem;
+    }
+
+    .form-range input {
+        height: 0.5rem;
+    }
+        
+    .form-radio input {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .form-radio span {
+        font-size: 1.2rem;
+    }
+    
+    .form-checkbox input {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .form-checkbox span {
+        font-size: 1.2rem;
+    }
+
+    .form-autocomplete {
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+
+    .form-autocomplete-list {
+        max-height: 150px;
+    }
+
+    .form-autocomplete-list button {
+        font-size: 1rem;
+        padding: 0.5rem;
+        max-height: 4.5rem;
+    }
+
+    .form-dropdown {
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+    
+    .form-dropdown-list .form-checkbox-dropdown input {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .form-dropdown-list .form-checkbox-dropdown span {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .form-select {
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+
+    .form-validate {
+        font-size: 1.2rem;
+    }
+}

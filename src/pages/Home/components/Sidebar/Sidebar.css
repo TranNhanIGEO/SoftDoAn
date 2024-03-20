@@ -1,0 +1,199 @@
+.sidebar {
+    /* float: left; */
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    width: 300px;
+    height: 92vh;
+    padding: 0 1rem;
+    box-shadow: 0 0 2px var(--grey-color-light);
+    background-color: var(--white-color);
+    transition: all 0.5s ease;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar.close {
+    padding: 0;
+    width: 80px;
+}
+
+.menu-content {
+    position: relative;
+}
+
+.menu-items {
+    padding: 0;
+}
+
+.menu-title {
+    margin: 1rem 0;
+    padding: 0 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sidebar.close .menu-title{
+    padding: 0.6rem 3rem;
+}
+
+.menu-title::before {
+    color: var(--grey-color);
+    white-space: nowrap;
+}
+
+.menu-advisingenrollment::before {
+    content: "Tuyển sinh 10 tại TP.HCM";  
+}
+
+.menu-schoollist::before {
+    content: "Thông tin trường THPT";
+}
+
+.sidebar.close .menu-title::before {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    width: 1.8rem;
+    border-radius: 1.2rem;
+    background-color: var(--grey-color-light);
+}
+
+.navlink {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.8rem;
+    color: var(--grey-color);
+}
+
+.navlink-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    min-width: 5rem;
+    border-radius: 0.6rem;
+}
+
+.navlink-icon svg {
+    font-size: 2.5rem;
+}
+
+.sidebar.close .navlink-title {
+    display: none;
+}
+
+.navlink:hover, 
+.navlink-icon:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 0.6rem;
+}
+
+.sidebar.close .navlink:hover {
+    background: var(--white-color);
+}
+
+.block-content {
+    position: fixed;
+    left: 0;
+    bottom: 5rem;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.block-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    padding: 1rem 0;
+    width: 100%;
+    height: 5rem;
+    color: var(--grey-color);
+    border-top: 1px solid var(--grey-color-light);
+    background-color: var(--white-color);
+}
+
+.block-item svg,
+.block-item span  {
+    font-size: 2rem;
+}
+
+.sidebar.close .block-content {
+    width: 5rem;
+    left: 1.5rem;
+}
+
+.sidebar.close .block-item span {
+    display: none;
+}
+
+.sidebar.hoverable .collapse-sidebar {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        height: 95vh;
+    }
+
+    .sidebar.close {
+        left: -100%;
+        width: 0;
+    }
+    
+    .menu-title {
+        font-size: 1.3rem;
+        padding: 0.1rem 1rem;
+    }
+
+    .navlink {
+        font-size: 1.2rem;
+        padding: 0.1rem 1rem;
+    }
+
+    .navlink-icon {
+        font-size: 1.5rem;
+        min-width: 2.8rem;
+    }
+
+    .navlink-icon svg {
+        font-size: 1.8rem;
+    }
+    
+    .block-content {
+        bottom: 3rem;
+        width: 200px;
+    }
+
+    .block-item {
+        height: 3rem;
+    }
+
+    .block-item svg,
+    .block-item span  {
+        font-size: 1.4rem;
+    }
+
+    .sidebar.close .block-content {
+        left: -100%;
+        width: 0;
+    }
+
+    .sidebar.close .block-item {
+        display: none;
+    }
+}

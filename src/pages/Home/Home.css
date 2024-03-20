@@ -1,0 +1,22 @@
+.main {
+    height: 92vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        height: 95vh
+    }
+}
+.homepage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem auto 0 auto;
+}
+
+.homepage-container {
+    max-width: 90vw;
+    width: 100%;
+}

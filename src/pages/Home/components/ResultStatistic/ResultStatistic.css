@@ -1,0 +1,54 @@
+.apexcharts-menu-item {
+    font-size: 1rem !important;
+}
+
+.apexcharts-legend-text {
+    color: var(--grey-color) !important;
+}
+
+.apexcharts-tooltip.apexcharts-active,
+.apexcharts-tooltip-title {
+    background: var(--white-color) !important
+}
+
+.apexcharts-title-text {
+    fill: var(--grey-color) !important;
+    font-size: 1.4rem;
+}
+
+.apexcharts-text tspan {
+    fill: var(--grey-color) !important;
+}
+
+@media screen and (max-width: 768px) {
+    .apexcharts-title-text {
+        font-size: 1rem !important;
+    }
+
+    .apexcharts-tooltip {
+        width: 15rem !important;
+    }
+
+    .apexcharts-tooltip-series-group {
+        padding: 0 0.5rem !important;
+    }
+
+    .apexcharts-tooltip-marker {
+        width: 0.85rem !important;
+        height: 0.85rem !important;
+        margin-right: 0.5rem !important;
+    }
+
+    .apexcharts-tooltip-text {
+        font-size: 0.85rem !important;
+    }
+
+    .apexcharts-yaxis-title-text,
+    .apexcharts-text tspan {
+        font-size: 1rem !important;
+    }
+
+    .apexcharts-legend-text {
+        font-size: 1rem !important;
+    }   
+}

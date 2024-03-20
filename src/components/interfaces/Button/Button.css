@@ -1,0 +1,37 @@
+.btn {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    min-height: 3rem;
+    min-width: 3rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.btn-success {
+    color: #ffffff;
+    background-color: #06b66c;
+    border-color: #06b66c;
+}
+  
+.btn-success:hover {
+    background: #006e52;
+}
+  
+.btn-failed {
+    color: #ffffff;
+    background-color: #ee243c;
+    border-color: #ee243c;
+}
+  
+.btn-failed:hover {
+    background: #83111e;
+}
+  
+@media screen and (max-width: 768px) {
+    .btn {
+        min-height: 2.5rem;
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+}

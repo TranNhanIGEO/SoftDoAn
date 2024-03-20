@@ -1,0 +1,38 @@
+.check-role {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.check-role label {
+    margin-left: 0.5rem;
+}
+
+.homepage select {
+    border: none;
+    border: 0.05px solid #615c5c8f;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}
+
+.control-panel {
+    position: absolute;
+    margin: 0.5rem;
+}
+
+.control-panel-container {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    max-width: 200px;
+    color: var(--grey-color);
+    background-color: var(--white-color);
+}
+
+.control-panel-container h3 {
+    text-align: center;
+}
+
+.control-panel-container img {
+    width: 1.8rem;
+    height: 1.8rem;
+}

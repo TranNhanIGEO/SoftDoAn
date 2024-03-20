@@ -1,0 +1,102 @@
+.schoollist {
+    height: 100%;
+    overflow: auto;
+}
+
+.schoollist .schoollist-item {
+    border-bottom: 1px solid var(--grey-color-light);
+    padding: 1rem;
+}
+
+.schoollist .schoollist-item:last-child {
+    border-bottom: none;
+}
+
+.schoollist .schoollist-item .schoollist-title {
+    display: block;
+    font-weight: 700;
+    color: var(--grey-color);
+}
+
+.schoollist .schoollist-item .schoollist-title small {
+    font-weight: 400;
+}
+
+.schoollist .schoollist-item .schoollist-title:hover {
+    cursor: pointer;
+    color: var(--blue-color);
+}
+
+.schoollist .schoollist-item.active {
+    background-color: var(--grey-color-light)
+}
+
+.schoollist .schoollist-item.active .schoollist-title {
+    color: var(--white-color);
+}
+
+.schoollist-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: var(--white-color);
+    background: var(--grey-color);
+}
+
+.schoolitem-container {
+    padding: 1rem;
+}
+
+.schoolitem-container h3 {
+    text-align: center;
+    margin-left: 0.5rem;
+    color: var(--black-color)
+}
+
+.schooltypes span {
+    margin-left: 1rem;
+    gap: 1rem;
+    color: var(--blue-color);
+}
+
+.schoolscores {
+    border: 1px solid;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.schoolscores th,
+.schoolscores td {
+    border: 1px solid;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.schoolitem-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.schoolitem-link a {
+    text-decoration: unset;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    color: var(--white-color);
+    border-radius: 8px;
+    background-color: var(--grey-color-light);
+}
+
+.schoolitem-link a img {
+    width: 24px;
+    height: 24px;
+}
+
+.schoolitem-link a span {
+    position: relative;
+    top: 2px;
+}

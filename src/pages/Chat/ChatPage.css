@@ -1,0 +1,18 @@
+.chat {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;    
+}
+
+.chat-container {
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    border: 1px solid var(--grey-color-light);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}

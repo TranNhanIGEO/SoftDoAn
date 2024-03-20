@@ -1,0 +1,11 @@
+.main {
+    height: 92vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        height: 95vh
+    }
+}
